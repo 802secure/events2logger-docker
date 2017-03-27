@@ -1,0 +1,35 @@
+api:
+  url: 'https://api.802secure.net/apiv1/customer'
+  key: '<your API key here>'
+
+sleep: 30
+
+#exclude_sources:
+#  - CUSTOMER API
+#  - CONSOLE
+
+#include_sources:
+#  - CONSOLE
+
+minimum_severity: 1
+
+syslog:
+  server: '192.168.1.100'
+  proto: 'udp'          # also supports tcp and tcp+tls with server certificate
+  output_format: 'cef'
+  port: 514
+  facility: 'LOG_LOCAL5'
+  #certificate: '/location/to/certificate.pem'
+  #tag: 'tag-if-desired'
+
+#graylog:
+#  server: '192.168.1.100'
+#  port: 9000
+
+#slack:
+#  webhook: '<your Slack webhook here>'
+#  channel: '#wifi_events'
+
+#output_format: 'json'
+
+
